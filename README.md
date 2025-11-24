@@ -57,8 +57,8 @@ class Device:
             # pin,        keycode, modifier
             (19, 0x4F, None),              # Forward → Right Arrow
             (18, 0x50, None),              # Backward → Left Arrow
-            (17, 0x1F, "ctrl"),            # Ctrl + TAB
-            (16, 0x1E, "ctrl"),            # Ctrl + Shift + TAB
+            (17, 0x1F, "ctrl"),            # Ctrl + 2
+            (16, 0x1E, "ctrl"),            # Ctrl + 1
             (0,  0x16, None),              # Key "S"
         ]
         # --------------------------------------------------

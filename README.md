@@ -4,8 +4,7 @@ This project turns an ESP32-S2 (or similar MicroPython-capable board with BLE su
 Five input pins are monitored and mapped to various keyboard actions such as:
 
 - Arrow keys  
-- `Ctrl + Tab`  
-- `Ctrl + Shift + Tab`  
+- `Ctrl + t`  
 - Sending characters  
 - Sending strings
 

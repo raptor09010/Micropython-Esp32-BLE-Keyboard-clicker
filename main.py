@@ -45,7 +45,34 @@ class Device:
     def set_key(self, key):
         self.keyboard.set_keys(key)
         self.keyboard.notify_hid_report()
-    
+        
+    def send_char(self, char):
+        if char == " ":
+            mod = 0
+            code = 0x2C
+        elif ord("a") <= ord(char) <= ord("z"):
+            mod = 0
+            code = 0x04 + ord(char) - ord("a")
+        elif ord("A") <= ord(char) <= ord("Z"):
+            mod = 1
+            code = 0x04 + ord(char) - ord("A")
+        else:
+            assert 0
+
+        self.keyboard.set_keys(code)
+        self.keyboard.set_modifiers(left_shift=mod)
+        self.keyboard.notify_hid_report()
+        time.sleep_ms(2)
+
+        self.keyboard.set_keys()
+        self.keyboard.set_modifiers()
+        self.keyboard.notify_hid_report()
+        time.sleep_ms(2)
+
+
+    def send_string(self, st):
+        for c in st:
+            self.send_char(c)
     # Main loop
     def start(self):
         self.advertise()
@@ -97,35 +124,7 @@ class Device:
             else:
                 time.sleep(2)
                 
-    def send_char(self, char):
-        if char == " ":
-            mod = 0
-            code = 0x2C
-        elif ord("a") <= ord(char) <= ord("z"):
-            mod = 0
-            code = 0x04 + ord(char) - ord("a")
-        elif ord("A") <= ord(char) <= ord("Z"):
-            mod = 1
-            code = 0x04 + ord(char) - ord("A")
-        else:
-            assert 0
-
-        self.keyboard.set_keys(code)
-        self.keyboard.set_modifiers(left_shift=mod)
-        self.keyboard.notify_hid_report()
-        time.sleep_ms(2)
-
-        self.keyboard.set_keys()
-        self.keyboard.set_modifiers()
-        self.keyboard.notify_hid_report()
-        time.sleep_ms(2)
-
-
-    def send_string(self, st):
-        for c in st:
-            self.send_char(c)
 
 
 d = Device()
 d.start()
-

@@ -50,7 +50,7 @@ Required modules:
 
 ---
 # working example
-![breadboard example](pictures/breadboard_example.jpg)
+![breadboard example](pictures/breadboard example.jpg)
 #wiring
 ![wiring example](pictures/wiring.png)
 

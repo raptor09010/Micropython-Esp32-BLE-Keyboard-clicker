@@ -43,15 +43,6 @@ ESP32-S2 / ESP32-S3 recommended.
 # Instalation instructions
 - Copy one of the hid_services library into your lib directory (hid_services.mpy is recomended)
   
-### Libraries  
-Required modules:
-
-- `hid_services`
-- `machine`
-- `time`
-
----
-
 # working example
 ![wiring example](pictures/wiring.png)
 

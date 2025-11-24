@@ -50,6 +50,9 @@ Required modules:
 
 ---
 # working example
+![breadboard example](images/breadboard_example.jpeg)
+#wiring
+![wiring example](images/wiring.png)
 
 ```python
 import time

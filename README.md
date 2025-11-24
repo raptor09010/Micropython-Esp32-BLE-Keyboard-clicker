@@ -39,6 +39,7 @@ All pins use **Pin.PULL_UP**, so each switch should short the pin to **GND** whe
 
 ### MicroPython firmware with BLE support  
 ESP32-S2 / ESP32-S3 recommended.
+The program uses at least 42kb of ram
 # Instalation instructions
 - Copy one of the hid_services library into your lib directory (hid_services.mpy is recomended)
   

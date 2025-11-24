@@ -42,7 +42,7 @@ All pins use **Pin.PULL_UP**, so each switch should short the pin to **GND** whe
 ESP32-S2 / ESP32-S3 recommended.
 # Instalation instructions
 - Copy one of the hid_services library into your lib directory (hid_services.mpy is recomended)
-- have the latest micropython build for best results
+  
 ### Libraries  
 Required modules:
 

@@ -291,7 +291,7 @@ self.keyboard.set_modifiers(left_shift=1, left_control=1)
 ```python
 self.keyboard.set_modifiers(left_control=1, left_shift=1)
 # Modifiers
-
+```
 | Modifier       | Bit  |
 |----------------|------|
 | Left Control   | 0x01 |

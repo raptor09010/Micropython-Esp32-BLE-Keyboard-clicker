@@ -49,6 +49,9 @@ Required modules:
 - `time`
 
 ---
+# instalation instructions
+Copy one of the hid_services library into your lib directory (hid_services.mpy is recomended)
+
 # working example
 ![wiring example](pictures/wiring.png)
 
